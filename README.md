@@ -81,6 +81,7 @@ Pas de nouveautés, nous utilisons l'image front build précédemment nommée `s
 # Docker hub
 
 Images sur docker hub afin qu'elles soient accessibles:
+
 Kévin:
 - backend : [lingatsu/backend](https://hub.docker.com/r/lingatsu/backend)
 - frontend : [lingasu/frontend](https://hub.docker.com/r/lingatsu/frontend)
