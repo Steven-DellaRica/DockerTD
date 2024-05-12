@@ -1,0 +1,45 @@
+version: '3.8'
+
+services:
+  mariadb:
+    image: mariadb:latest
+    env_file:
+      - .env
+    volumes:
+      - ./data_base:/var/lib/mysql
+    networks:
+      - backend
+
+  bff:
+    image: stevendella/back_app
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    depends_on:
+      - mariadb
+    networks:
+      - backend
+  
+  front:
+    image: stevendella/front_app
+    ports:
+      - "4200:80"  
+    env_file:
+      - .env
+    networks:
+      - backend
+
+  phpmyadmin:
+    image: phpmyadmin:latest
+    env_file:
+      - .env
+    ports:
+      - "8081:80"
+    depends_on:
+      - mariadb
+    networks:
+      - backend
+
+networks:
+  backend:
