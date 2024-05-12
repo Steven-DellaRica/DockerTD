@@ -81,13 +81,13 @@ Pas de nouveautés, nous utilisons l'image front build précédemment nommée `s
 # Docker hub
 
 Images sur docker hub afin qu'elles soient accessibles:
+Kévin:
+- backend : [lingatsu/backend](https://hub.docker.com/r/lingatsu/backend)
+- frontend : [lingasu/frontend](https://hub.docker.com/r/lingatsu/frontend)
 
-- backend : 
-    [lingatsu/backend](https://hub.docker.com/r/lingatsu/backend)
-    [stevendella/back_app](https://hub.docker.com/r/stevendella/back_app)
-- frontend : 
-    [lingasu/frontend](https://hub.docker.com/r/lingatsu/frontend)
-    [stevendella/front_app](https://hub.docker.com/r/stevendella/front_app)
+Steven:
+- frontend: [stevendella/front_app](https://hub.docker.com/r/stevendella/front_app)
+- backend: [stevendella/back_app](https://hub.docker.com/r/stevendella/back_app)
 
 Git Hub de [Kévin](https://github.com/Lingatsu/td-docker)
 
